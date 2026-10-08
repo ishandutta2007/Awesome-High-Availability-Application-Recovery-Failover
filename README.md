@@ -114,7 +114,7 @@ Welcome to the ultimate curated directory of **high-availability application rec
 
 ## 🔓 Open-Source GitHub Projects
 
-*Sorted by GitHub Stars Count (Descending)* 🌟
+*Sorted by GitHub_Stars_Count (Descending)* 🌟
 
 - **[Caddy](https://github.com/caddyserver/caddy)** [![Stars](https://img.shields.io/github/stars/caddyserver/caddy?style=social&color=white)](https://github.com/caddyserver/caddy/stargazers)  
   **Fast, multi-platform web server with automatic HTTPS and active health checks**, Apache-2.0 licensed. **Active and passive upstream health monitoring** with automatic failover and load balancing. ⚡
