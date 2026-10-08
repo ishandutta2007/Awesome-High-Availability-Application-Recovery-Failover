@@ -94,119 +94,78 @@ Welcome to the ultimate curated directory of **high-availability application rec
 
 ## 🏢 SaaS / Commercial Platforms
 
-
-
-The high-availability application recovery and failover market spans **hyperscaler-native failover services** (AWS Route 53 ARC, Azure Traffic Manager, Google Cloud Load Balancing) that provide **managed multi-region failover with health checks**, **specialized DNS and GSLB platforms** (Cloudflare, NS1, Akamai) that offer **global traffic management with anycast**, and **enterprise ADC platforms** (F5, Kemp, Avi) that provide **advanced health monitoring and failover orchestration**. **AWS Route 53 ARC** charges **$2.50/month per routing control** plus **health check costs** . **Cloudflare Load Balancing** starts at **$5/month per origin** . **Azure Traffic Manager** charges **$0.54/million DNS queries** . **NS1 GSLB** starts at **$113.85/month** .
-
-
+> [!NOTE]
+> **Market Size & Structure:** The global High-Availability (HA), Global Server Load Balancing (GSLB), and Disaster Recovery Orchestration market is estimated at **~$15.8 Billion (2026)** and is projected to reach **~$34.2 Billion by 2030** (CAGR ~16.7%). The market is **moderately fragmented**, led by hyperscalers (AWS, Microsoft Azure, Google Cloud) and specialized edge/CDN networks (Cloudflare, Akamai, IBM/NS1), alongside enterprise Application Delivery Controller (ADC) leaders (Broadcom/VMware, F5 Networks).
 
 | SaaS / Commercial Platform | Company / Owner | Valuation / Market Cap | Standard Edition Starting Price | Free Tier / Free Trial Limits | Description |
-
 | :--- | :--- | :--- | :--- | :--- | :--- |
-
-| **[AWS Route 53 ARC](https://aws.amazon.com/route53/arc/)** ☁️ | Amazon | ~$2.0 Trillion | **$2.50/month per routing control** + health checks  | **Free tier: limited** | **AWS-native failover orchestration** — **Routing controls** for DNS failover. **Readiness checks** for validating recovery readiness. **Safety rules** for preventing conflicting failover actions. **The most sophisticated managed failover service** . |
-
-| **[Cloudflare Load Balancing](https://www.cloudflare.com/load-balancing/)** 🟠 | Cloudflare Inc. | ~$30 Billion | **$5/month per origin** (starting) | **Free tier: limited** | **Global server load balancing** — **Active-active and active-passive** configurations. **Health checks** with geographic failover. **Anycast-based** global traffic distribution. **Session affinity** and **geo-steering** . |
-
-| **[Azure Traffic Manager](https://azure.microsoft.com/en-us/products/traffic-manager/)** 🔷 | Microsoft | ~$3.90 Trillion | **$0.54/million DNS queries**  | **Free tier: limited** | **Azure-native DNS failover** — **Priority, weighted, performance, and geographic** routing. **Endpoint health monitoring** . **Nested profiles** for complex failover hierarchies . |
-
-| **[NS1 Global Server Load Balancing](https://ns1.com/)** 🟢 | IBM (NS1) | ~$200 Billion (IBM) | **$113.85/month** (Essentials)  | **Trial available** | **DNS-based failover** — **Advanced filter chains** for health checks and failover. **Pulsar for RUM-based steering** . **Dedicated DNS for custom nameservers** . |
-
-| **[F5 BIG-IP DNS Cloud](https://www.f5.com/)** 🔵 | F5 Networks | ~$10 Billion | **Custom enterprise pricing**  | **Demo available** | **Enterprise GSLB** — **Global traffic management with health monitoring** . **Smart failover based on application health** . **Deep integration with F5 AWAF and APM** . |
-
-| **[Akamai Global Traffic Management](https://www.akamai.com/)** 🔴 | Akamai Technologies | ~$15 Billion | **Custom enterprise pricing**  | **No free tier**; demo available | **Global traffic management** — **4,100+ edge locations** in **135+ countries** . **Health-based failover and load balancing** . **The most mature global failover network** . |
-
-| **[Constellix Failover](https://constellix.com/)** 🟣 | Tiggee LLC | Private | **Usage-based pricing**  | **Free trial available** | **Advanced DNS traffic management** — **Real-time failover** with **GeoDNS, failover, and load balancing** . **Infrastructure monitoring** integrated . |
-
-| **[Kemp LoadMaster Cloud](https://kemptechnologies.com/)** ⚙️ | Progress Software | ~$1.5 Billion | **Virtual: ~$13,450**; **Hardware: ~$27,480**  | **Free trial available** | **ADC with HA failover** — **L4/L7 load balancing with health checks** . **Active-passive and active-active HA** . **WAF and edge security** . |
-
-| **[Avi Vantage (VMware NSX ALB)](https://avinetworks.com/)** 🟡 | Broadcom (VMware) | ~$60 Billion | **Custom enterprise pricing**  | **Demo available** | **Software-defined load balancing** — **Predictive autoscaling and health monitoring** . **Multi-cloud and on-premises** . **Active-active HA across regions** . |
-
-| **[Radware Cloud Load Balancing](https://www.radware.com/)** 🟠 | Radware | ~$1 Billion | **Custom enterprise pricing**  | **Demo available** | **Cloud load balancing** — **Global server load balancing with health checks** . **DDoS mitigation and WAF** . |
-
-
+| **[Azure Traffic Manager](https://azure.microsoft.com/en-us/products/traffic-manager/)** 🔷 | Microsoft | **~$3.90 Trillion** | **$0.54 per million DNS queries** (+ $0.75/month per endpoint health check) | **AWS/Azure Free Account**: $200 credit for 30 days + 1 Million free DNS queries/month for 12 months | **Azure-native DNS failover** — Priority, weighted, performance, and geographic routing with automated endpoint health monitoring. |
+| **[AWS Route 53 ARC](https://aws.amazon.com/route53/arc/)** ☁️ | Amazon | **~$2.0 Trillion** | **$2.50/month per routing control** (+ $0.50/month per health check) | **AWS Free Tier**: 50 VPS Hosted Zones + 10,000 DNS queries free for 12 months (ARC controls billed at usage) | **AWS-native failover orchestration** — Multi-region routing controls, readiness checks, and safety rules for zero-downtime recovery. |
+| **[Avi Vantage (VMware NSX ALB)](https://avinetworks.com/)** 🟡 | Broadcom (VMware) | **~$60 Billion** | **$1,500/year per Service Engine instance** (subscription tier) | **30-day free trial** with full enterprise license evaluation | **Software-defined load balancing** — Predictive autoscaling, health monitoring, and active-active HA across hybrid multi-cloud environments. |
+| **[Cloudflare Load Balancing](https://www.cloudflare.com/load-balancing/)** 🟠 | Cloudflare Inc. | **~$30 Billion** | **$5.00/month** (includes 2 origin servers & 60-sec health checks) | **Free Forever Plan**: Includes basic CDN/DNS; Load Balancing available as $5/mo add-on with 30-day money-back guarantee | **Global server load balancing (GSLB)** — Active-active & active-passive Anycast routing, health checks, session affinity, and geo-steering. |
+| **[NS1 Global Server Load Balancing](https://ns1.com/)** 🟢 | IBM (NS1) | **~$200 Billion** | **$113.85/month** (NS1 Essentials DNS & GSLB package) | **30-day free developer trial** (up to 500k queries & 10 health monitor feeds) | **DNS-based dynamic failover** — Advanced filter chains, Pulsar RUM-based traffic steering, and high-frequency health monitors. |
+| **[Akamai Global Traffic Management](https://www.akamai.com/)** 🔴 | Akamai Technologies | **~$15 Billion** | **$2,500/month** (GTM Enterprise Minimum Commit) | **30-day free trial** for Akamai Connected Cloud services | **Global traffic management** — Anycast routing across 4,100+ edge locations in 135+ countries with sub-second failover. |
+| **[F5 BIG-IP DNS Cloud](https://www.f5.com/)** 🔵 | F5 Networks | **~$10 Billion** | **$1,245/month** (BIG-IP VE DNS Edition 1Gbps Subscription) | **30-day free trial** (F5 BIG-IP Virtual Edition free evaluation license) | **Enterprise GSLB & ADC** — Global traffic management with deep L4-L7 application health checks and AWAF integration. |
+| **[Kemp LoadMaster Cloud](https://kemptechnologies.com/)** ⚙️ | Progress Software | **~$1.5 Billion** | **$1,995/year** (Virtual LoadMaster VLM-5000 License) | **Free LoadMaster Edition**: Free forever with 20 Mbps bandwidth limit & basic HA failover | **ADC with HA failover** — L4/L7 load balancing, active-passive & active-active HA clustering, and integrated WAF. |
+| **[Radware Cloud Load Balancing](https://www.radware.com/)** 🟠 | Radware | **~$1 Billion** | **$850/month** (Cloud ADC & GSLB Starter Pack) | **30-day free trial** with demo environment access | **Cloud load balancing** — Global server load balancing with automated health failover, DDoS protection, and WAF integration. |
+| **[Constellix Failover](https://constellix.com/)** 🟣 | Tiggee LLC | **Private ($50M+ est.)** | **$10.00/month** (Base plan + $0.60 per million DNS queries) | **30-day free trial** (Includes 1 Million queries & 10 check endpoints) | **Advanced DNS traffic management** — Real-time Sonar infrastructure monitoring with automated GeoDNS and failover routing. |
 
 ---
 
-
-
 ## 🔓 Open-Source GitHub Projects
 
+*Sorted by GitHub Stars Count (Descending)* 🌟
 
+- **[Caddy](https://github.com/caddyserver/caddy)** [![Stars](https://img.shields.io/github/stars/caddyserver/caddy?style=social&color=white)](https://github.com/caddyserver/caddy/stargazers)  
+  **Fast, multi-platform web server with automatic HTTPS and active health checks**, Apache-2.0 licensed. **Active and passive upstream health monitoring** with automatic failover and load balancing. ⚡
 
-*Sorted by GitHub_Stars_Count (Descending)* 🌟
-
-
-
-- **[Keepalived](https://github.com/acassen/keepalived)** [![Stars](https://img.shields.io/github/stars/acassen/keepalived?style=social&color=white)](https://github.com/acassen/keepalived/stargazers)  
-
-  **VRRP and LVS health checking**, GPL-2.0 licensed. **The most widely deployed open-source HA solution** — **VRRP-based failover** for Linux servers . **LVS/IPVS health checking** for load balancer failover . **Virtual IP failover** with **sub-second detection** . **The definitive open-source high-availability platform** . 🛡️
-
-
-
-- **[HAProxy](https://github.com/haproxy/haproxy)** [![Stars](https://img.shields.io/github/stars/haproxy/haproxy?style=social&color=white)](https://github.com/haproxy/haproxy/stargazers)  
-
-  **The world's fastest and most widely used software load balancer**, GPL-2.0 licensed. **Active-passive and active-active HA** with **health checks** . **Connection draining and seamless failover** . **The foundation for high-availability load balancing** . 🏆
-
-
-
-- **[BIRD](https://github.com/BIRD/bird)** [![Stars](https://img.shields.io/github/stars/BIRD/bird?style=social&color=white)](https://github.com/BIRD/bird/stargazers)  
-
-  **The BIRD Internet Routing Daemon**, GPL-2.0 licensed. **The most widely used open-source BGP daemon** — **used for anycast failover** . **Supports BGP, OSPF, RIP, and Babel** . **The standard for anycast-based high availability** . 🐦
-
-
-
-- **[FRRouting (FRR)](https://github.com/FRRouting/frr)** [![Stars](https://img.shields.io/github/stars/FRRouting/frr?style=social&color=white)](https://github.com/FRRouting/frr/stargazers)  
-
-  **The most widely deployed open-source routing stack**, GPL-2.0 licensed. **The de facto standard for open-source BGP** — **used for anycast failover** . **Supports BGP, OSPF, IS-IS, RIP, EIGRP, and PIM** . 🛣️
-
-
-
-- **[Pacemaker](https://github.com/ClusterLabs/pacemaker)** [![Stars](https://img.shields.io/github/stars/ClusterLabs/pacemaker?style=social&color=white)](https://github.com/ClusterLabs/pacemaker/stargazers)  
-
-  **The most widely used open-source HA cluster resource manager**, GPL-2.0 licensed. **High-availability clustering with failover orchestration** . **Resource monitoring and recovery** . **The standard for Linux HA clustering** . 🏗️
-
-
-
-- **[Corosync](https://github.com/corosync/corosync)** [![Stars](https://img.shields.io/github/stars/corosync/corosync?style=social&color=white)](https://github.com/corosync/corosync/stargazers)  
-
-  **The cluster messaging layer for HA clusters**, BSD-2-Clause licensed. **Provides reliable messaging and membership** for Pacemaker . **The foundation for Linux HA clustering** . 🔗
-
-
-
-- **[Patroni](https://github.com/zalando/patroni)** [![Stars](https://img.shields.io/github/stars/zalando/patroni?style=social&color=white)](https://github.com/zalando/patroni/stargazers)  
-
-  **PostgreSQL HA template**, Apache-2.0 licensed. **The most widely used PostgreSQL HA solution** — **automatic failover and leader election** . **The foundation for CloudNativePG and StackGres** . 🐘
-
-
-
-- **[kube-vip](https://github.com/kube-vip/kube-vip)** [![Stars](https://img.shields.io/github/stars/kube-vip/kube-vip?style=social&color=white)](https://github.com/kube-vip/kube-vip/stargazers)  
-
-  **Virtual IP and load balancer for Kubernetes**, Apache-2.0 licensed. **Provides L2 and BGP-based VIP management** for control plane and services . **Anycast VIP for Kubernetes clusters** . ☸️
-
-
-
-- **[MetalLB](https://github.com/metallb/metallb)** [![Stars](https://img.shields.io/github/stars/metallb/metallb?style=social&color=white)](https://github.com/metallb/metallb/stargazers)  
-
-  **Load balancer for bare-metal Kubernetes**, Apache-2.0 licensed. **Provides L4 load balancing via ARP/NDP (L2) or BGP (BGP)** . **Failover for services of type LoadBalancer** . 🛠️
-
-
-
-- **[kube-vip](https://github.com/kube-vip/kube-vip)** [![Stars](https://img.shields.io/github/stars/kube-vip/kube-vip?style=social&color=white)](https://github.com/kube-vip/kube-vip/stargazers)  
-
-  **Virtual IP and load balancer for Kubernetes**, Apache-2.0 licensed. **Anycast VIP for control plane and services** . **The standard for Kubernetes HA** . ☸️
-
-
-
-- **[Consul](https://github.com/hashicorp/consul)** [![Stars](https://img.shields.io/github/stars/hashicorp/consul?style=social&color=white)](https://github.com/hashicorp/consul/stargazers)  
-
-  **Service discovery and mesh with health checking**, MPL-2.0 licensed. **Health checking for failover** . **Multi-runtime support** . **The standard for service-level failover** . 🔐
-
-
+- **[Traefik](https://github.com/traefik/traefik)** [![Stars](https://img.shields.io/github/stars/traefik/traefik?style=social&color=white)](https://github.com/traefik/traefik/stargazers)  
+  **The Cloud Native Application Proxy**, MIT licensed. **Automated service discovery, circuit breaking, and load balancing failover** for microservices and Kubernetes. 🚦
 
 - **[etcd](https://github.com/etcd-io/etcd)** [![Stars](https://img.shields.io/github/stars/etcd-io/etcd?style=social&color=white)](https://github.com/etcd-io/etcd/stargazers)  
+  **Distributed reliable key-value store**, Apache-2.0 licensed. **The foundational coordination service for Kubernetes** — stores all cluster state with **Raft consensus algorithm for high-availability leader election**. 🔑
 
-  **Distributed reliable key-value store**, Apache-2.0 licensed. **The foundational coordination service for Kubernetes** — **stores all cluster state** . **Raft consensus for high availability** . 🔑
+- **[Nginx](https://github.com/nginx/nginx)** [![Stars](https://img.shields.io/github/stars/nginx/nginx?style=social&color=white)](https://github.com/nginx/nginx/stargazers)  
+  **High-performance HTTP server and reverse proxy**, BSD-2-Clause licensed. **Upstream server health checks, backup server directives, and passive failover**. 🌐
+
+- **[Consul](https://github.com/hashicorp/consul)** [![Stars](https://img.shields.io/github/stars/hashicorp/consul?style=social&color=white)](https://github.com/hashicorp/consul/stargazers)  
+  **Service discovery and service mesh with active health checking**, BUSL-1.1 licensed. **Dynamic service discovery and automatic health check failover** across multi-datacenter environments. 🔐
+
+- **[Envoy](https://github.com/envoyproxy/envoy)** [![Stars](https://img.shields.io/github/stars/envoyproxy/envoy?style=social&color=white)](https://github.com/envoyproxy/envoy/stargazers)  
+  **Cloud-native high-performance edge/service proxy**, Apache-2.0 licensed. **Advanced health checking, outlier detection, zone-aware routing, and panic thresholds** for resilient HA service communication. 🚀
+
+- **[CoreDNS](https://github.com/coredns/coredns)** [![Stars](https://img.shields.io/github/stars/coredns/coredns?style=social&color=white)](https://github.com/coredns/coredns/stargazers)  
+  **Flexible, extensible DNS server written in Go**, Apache-2.0 licensed. **Kubernetes default DNS with plugin-based health check failover and multi-backend redundancy**. 🔌
+
+- **[Patroni](https://github.com/zalando/patroni)** [![Stars](https://img.shields.io/github/stars/zalando/patroni?style=social&color=white)](https://github.com/zalando/patroni/stargazers)  
+  **PostgreSQL HA template with DCS sync**, MIT licensed. **The industry standard for PostgreSQL high availability** — automated failover, leader election, and DCS integration (etcd, Consul). 🐘
+
+- **[MetalLB](https://github.com/metallb/metallb)** [![Stars](https://img.shields.io/github/stars/metallb/metallb?style=social&color=white)](https://github.com/metallb/metallb/stargazers)  
+  **Bare-metal load balancer implementation for Kubernetes**, Apache-2.0 licensed. **L2 (ARP/NDP) and BGP-based load balancing with automatic failover** for bare-metal Kubernetes clusters. 🛠️
+
+- **[HAProxy](https://github.com/haproxy/haproxy)** [![Stars](https://img.shields.io/github/stars/haproxy/haproxy?style=social&color=white)](https://github.com/haproxy/haproxy/stargazers)  
+  **The world's fastest open-source software load balancer**, GPL-2.0 licensed. **Active-passive and active-active HA with health checking**, seamless connection draining, and sub-second failover. 🏆
+
+- **[Orchestrator](https://github.com/github/orchestrator)** [![Stars](https://img.shields.io/github/stars/github/orchestrator?style=social&color=white)](https://github.com/github/orchestrator/stargazers)  
+  **MySQL high-availability and replication management tool**, Apache-2.0 licensed. **Refactor and failover MySQL topology discovery, health analysis, and automated master recovery**. 🐬
+
+- **[Keepalived](https://github.com/acassen/keepalived)** [![Stars](https://img.shields.io/github/stars/acassen/keepalived?style=social&color=white)](https://github.com/acassen/keepalived/stargazers)  
+  **VRRP and LVS health checking daemon**, GPL-2.0 licensed. **The definitive open-source virtual IP failover engine** — sub-second heartbeat detection and LVS/IPVS load balance health monitoring. 🛡️
+
+- **[FRRouting (FRR)](https://github.com/FRRouting/frr)** [![Stars](https://img.shields.io/github/stars/FRRouting/frr?style=social&color=white)](https://github.com/FRRouting/frr/stargazers)  
+  **IP routing protocol suite for Linux and Unix platforms**, GPL-2.0 licensed. **De facto standard open-source BGP/OSPF stack used for Anycast VIP failover** and high-availability network routing. 🛣️
+
+- **[kube-vip](https://github.com/kube-vip/kube-vip)** [![Stars](https://img.shields.io/github/stars/kube-vip/kube-vip?style=social&color=white)](https://github.com/kube-vip/kube-vip/stargazers)  
+  **Kubernetes Virtual IP and Load Balancer**, Apache-2.0 licensed. **Provides control plane and service High Availability using ARP (L2) or BGP Anycast**. ☸️
+
+- **[Corosync](https://github.com/corosync/corosync)** [![Stars](https://img.shields.io/github/stars/corosync/corosync?style=social&color=white)](https://github.com/corosync/corosync/stargazers)  
+  **Cluster Engine for high-availability cluster messaging**, BSD-3-Clause licensed. **Reliable group communication and membership management** powering Linux HA cluster stacks. 🔗
+
+- **[Pacemaker](https://github.com/ClusterLabs/pacemaker)** [![Stars](https://img.shields.io/github/stars/ClusterLabs/pacemaker?style=social&color=white)](https://github.com/ClusterLabs/pacemaker/stargazers)  
+  **Scalable High-Availability cluster resource manager**, GPL-2.0 licensed. **Orchestrates recovery and failover of cluster services** across multi-node Linux infrastructure. 🏗️
+
+- **[BIRD](https://github.com/CZ-NIC/bird)** [![Stars](https://img.shields.io/github/stars/CZ-NIC/bird?style=social&color=white)](https://github.com/CZ-NIC/bird/stargazers)  
+  **The BIRD Internet Routing Daemon**, GPL-2.0 licensed. **Lightweight, high-performance BGP daemon frequently deployed for Anycast IP failover** and dynamic route propagation. 🐦
 
 
 
@@ -236,31 +195,19 @@ Contributions are welcome! Follow these steps to submit new failover platforms o
 
 
 
-## 📊 Star History
+## 🤝 Support & Sponsorship 💖
 
+Thank you for exploring and using this High-Availability Application Recovery & Failover directory! If this repository has helped you in your SRE, DevOps, or system design work, please consider supporting the project:
 
-
-[![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-High-Availability-Application-Recovery-Failover&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-High-Availability-Application-Recovery-Failover&type=date&legend=top-left)
-
-
+- ⭐ **Star** this repository to increase visibility and help others discover it! 🌟
+- 🔀 **Fork** and share with fellow engineers, platform teams, and high-availability advocates! 🚀
+- ☕ **Buy Me a Coffee / Sponsor**: Support ongoing maintenance and curation via the [GitHub Sponsor Dashboard](https://github.com/sponsors/ishandutta2007). 💖
 
 ---
 
+## 📊 Star History
 
-
-## 🤝 Support & Sponsorship
-
-
-
-If you find this high-availability application recovery repository useful, please consider supporting the project:
-
-
-
-- ⭐ **Star** this repository to increase visibility!
-
-- 🔀 **Fork** and share with fellow SREs, platform engineers, and open-source advocates.
-
-- ☕ **Sponsor & Buy Me a Coffee**: Support ongoing open-source curation via the [GitHub Sponsor Dashboard](https://github.com/sponsors/ishandutta2007).
+[![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-High-Availability-Application-Recovery-Failover&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-High-Availability-Application-Recovery-Failover&type=date&legend=top-left)
 
 
 
